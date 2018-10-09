@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Getting to Know Vue.js</title>
+</head>
+
+<body>
+    <!-- Div to Mount App -->
+    <div id="app"></div>
+
+    <!-- Reference to Vue.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <!-- Script Element for our App -->
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                myName: 'Cool Name'
+            },
+            template: `
+                <div>
+                    <div v-bind:name="myName"></div> 
+                </div>
+                `
+        });
+    </script>
+
+
+</body>
+
+</html>
+
+</body>
+
+</html>

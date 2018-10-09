@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Getting to Know Vue.js</title>
+    <style>
+        .error {
+            color: red;
+            border: red 3px solid;
+        }
+
+        .no-error {
+            color: green;
+            border: green 3px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Div to Mount App -->
+    <div id="app">
+
+        <div>
+            <h4>Two Classes Bound</h4>
+            <input type="text" v-model="input" v-bind:class="{ error : inputError, 'no-error' : inputError == false }" />
+        </div>
+    </div>
+
+    <!-- Reference to Vue.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- Script reference for our App -->
+    <script src="/app.js"></script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>

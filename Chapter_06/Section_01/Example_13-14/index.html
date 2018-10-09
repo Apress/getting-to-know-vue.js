@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Getting to Know Vue.js</title>
+</head>
+
+<body>
+    <!-- Div to Mount App -->
+    <div id="app">
+        <h4>Select</h4>
+        <select v-model="select">
+            <option disabled value="">Select your Show</option>
+            <option value="startrek">Star Trek</option>
+            <option value="starwars">Star Wars</option>
+            <option value="firefly">Firefly</option>
+            <option value="drwho">Dr. Who</option>
+        </select>
+        <p>
+            <strong>Selected:</strong> {{select}}
+        </p>
+
+        <h4>Multi-Select</h4>
+        <select v-model="multiSelect" multiple>
+            <option value="startrek">Star Trek</option>
+            <option value="starwars">Star Wars</option>
+            <option value="firefly">Firefly</option>
+            <option value="drwho">Dr. Who</option>
+        </select>
+        <p>
+            <strong>Multi-Selected:</strong> {{multiSelect}}
+        </p>
+    </div>
+
+    <!-- Reference to Vue.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- Script reference for our App -->
+    <script src="/app.js"></script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>

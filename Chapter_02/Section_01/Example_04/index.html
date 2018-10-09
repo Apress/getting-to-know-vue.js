@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Getting to Know Vue.js</title>
+</head>
+
+<body>
+    <!-- Div to Mount App -->
+    <div id="app">
+        This will be replaced!
+    </div>
+
+    <!-- Reference to Vue.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- Script Element for our App -->
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                propertyName: 'Hello from Getting to Know Vue.js! Using a template!'
+            },
+            template: '<div>{{ propertyName }}</div>'
+        });
+    </script>
+
+
+</body>
+
+</html>
