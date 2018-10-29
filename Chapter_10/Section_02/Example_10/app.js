@@ -8,7 +8,7 @@ var app = new Vue({
       if (!value) {
         return '';
       }
-      let text = value.toString();
+      const text = value.toString();
       return text
         .split('')
         .filter((letter, index) => {
